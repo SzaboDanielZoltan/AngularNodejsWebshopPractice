@@ -20,6 +20,11 @@ module.exports = class DB {
           dataArray => resolve(dataArray),
           err => reject(err),
         );
+      } else {
+        this.getJsonArray().then(
+          dataArray => resolve(dataArray.filter(order => order.id == id)[0] || {}),
+          err => reject(err),
+        );
       }
     });
   }

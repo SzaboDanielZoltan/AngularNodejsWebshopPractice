@@ -2,8 +2,11 @@ const DB = require('./db');
 
 module.exports = class GetHandler {
   constructor(req, res) {
-    const ordersDB = new DB(req.url);
-    ordersDB.find().then(
+    const reqParams = req.url.split('/');
+
+    const ordersDB = new DB(reqParams[1]);
+    const id = reqParams[2] || 0;
+    ordersDB.find(id).then(
       data => res.end(JSON.stringify(data, null, 4)),
       (err) => {
         res.statusCode = 404;
