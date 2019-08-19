@@ -50,7 +50,7 @@ module.exports = class DB {
           return reject(err);
         }
 
-        resolve(console.log(jsonString));
+        resolve(JSON.parse(jsonString));
       });
     });
   }
