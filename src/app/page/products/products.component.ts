@@ -10,12 +10,22 @@ import { Observable } from 'rxjs';
 export class ProductsComponent implements OnInit {
 
   list$: Observable<any> = this.orderService.getAll('products');
+  orderKey: string = '';
+  orderDirection: number = 1;
 
   constructor(
     private orderService: OrderService
   ) { }
-  
+
   ngOnInit() {
   }
 
+  onSort(key: string): void {
+    if (key === this.orderKey) {
+      this.orderDirection = this.orderDirection == -1 ? 1 : -1;
+    } else {
+      this.orderDirection = 1;
+    }
+    this.orderKey = key;
+  }
 }
