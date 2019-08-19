@@ -11,19 +11,19 @@ import { Router } from '@angular/router';
 })
 export class ProductsComponent implements OnInit {
 
-  list$: Observable<any> = this.orderService.getAll('products');
+  list$: Observable<any> = this.orderService.getAll('products', '0');
   orderKey: string = '';
   orderDirection: number = 1;
 
   constructor(
     private orderService: OrderService,
-    private router:Router
+    private router: Router
   ) { }
 
   ngOnInit() {
   }
 
- 
+
   onSort(key: string): void {
     if (key === this.orderKey) {
       this.orderDirection = this.orderDirection == -1 ? 1 : -1;
