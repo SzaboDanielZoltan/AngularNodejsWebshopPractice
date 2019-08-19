@@ -29,20 +29,32 @@ module.exports = class DB {
     });
   }
 
-  post(newObj){
-    return new Promise((resolve,reject)=>{
-       this.getJsonArray().then(
-        dataArray=>{
-          console.log(dataArray[0].id)
-          console.log(newObj.id)
+  post(newObj) {
+    return new Promise((resolve, reject) => {
+      this.getJsonArray().then(
+        dataArray => {
+          const newId = this.maxId(dataArray) + 1;
+          newObj.id = newId;
           dataArray.push(newObj);
-          fs.writeFile(this.jsonFilePath,JSON.stringify(dataArray, null, 2) ,'utf8', (err) => {
-              return reject(err);
+          fs.writeFile(this.jsonFilePath, JSON.stringify(dataArray, null, 2), 'utf8', (err) => {
+            return reject(err);
           })
         },
-        err=>reject(err),
+        err => reject(err),
       );
     })
+  }
+
+  maxId(array) {
+    let result = 0;
+
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].id > result) {
+        result = array[i].id;
+      }
+    }
+
+    return result;
   }
 
   getJsonArray() {
