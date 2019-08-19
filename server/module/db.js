@@ -33,8 +33,8 @@ module.exports = class DB {
     return new Promise((resolve,reject)=>{
        this.getJsonArray().then(
         dataArray=>{
-          console.log(dataArray)
-          console.log(newObj)
+          console.log(dataArray[0].id)
+          console.log(newObj.id)
           dataArray.push(newObj);
           fs.writeFile(this.jsonFilePath,JSON.stringify(dataArray, null, 2) ,'utf8', (err) => {
               return reject(err);
