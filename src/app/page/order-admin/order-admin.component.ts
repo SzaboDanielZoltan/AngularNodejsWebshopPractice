@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class OrderAdminComponent implements OnInit {
 
   // list: Order[] = [];
-  list$: Observable<any> = this.orderService.getAll();
+ //list$: Observable<any> = this.orderService.getAll();
 
   constructor(
     private orderService: OrderService

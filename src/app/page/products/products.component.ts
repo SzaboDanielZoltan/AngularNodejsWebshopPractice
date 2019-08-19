@@ -17,13 +17,13 @@ export class ProductsComponent implements OnInit {
 
   constructor(
     private orderService: OrderService,
-    private router: Router
+    private router:Router
   ) { }
 
   ngOnInit() {
   }
 
-
+ 
   onSort(key: string): void {
     if (key === this.orderKey) {
       this.orderDirection = this.orderDirection == -1 ? 1 : -1;

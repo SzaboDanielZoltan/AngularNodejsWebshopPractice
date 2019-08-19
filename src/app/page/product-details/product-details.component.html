@@ -1,4 +1,4 @@
-<pre>{{ product$ | async | json }}</pre>
+
 <div class="jumbotron">
     <h1 class="display-3">{{ (product$ | async)?.title}}</h1>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
@@ -30,10 +30,15 @@
             </div>
             <div class="modal-body">
                 <p>Modal body text goes here.</p>
+                <form>
+                    <input type="text" [(ngModel)]="order.userName" name="userName">
+                    <input type="text">
+                    <input type="text">
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button"
-                        class="btn btn-primary">Save changes</button>
+                        class="btn btn-primary" (click)="postNewOrder()">Save changes</button>
                 <button type="button"
                         class="btn btn-secondary"
                         data-dismiss="modal">Close</button>
