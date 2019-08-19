@@ -29,6 +29,20 @@ module.exports = class DB {
     });
   }
 
+  post(newObj){
+    return new Promise((resolve,reject)=>{
+       this.getJsonArray().then(
+        dataArray=>{
+          dataArray.push(newObj);
+          fs.writeFile(this.jsonFilePath,JSON.stringify(this.dataArray) ,'utf8', (err) => {
+              return reject(err);
+          })
+        },
+        err=>reject(err),
+      );
+    })
+  }
+
   getJsonArray() {
     return new Promise((resolve, reject) => {
       fs.readFile(this.jsonFilePath, 'utf8', (err, jsonString) => {
@@ -36,7 +50,7 @@ module.exports = class DB {
           return reject(err);
         }
 
-        resolve(JSON.parse(jsonString));
+        resolve(console.log(jsonString));
       });
     });
   }
