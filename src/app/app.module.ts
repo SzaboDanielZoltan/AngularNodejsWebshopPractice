@@ -6,12 +6,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './page/index/index.component';
 import { OrderAdminComponent } from './page/order-admin/order-admin.component';
+import { NavComponent } from './nav/nav.component';
+import { ProductsComponent } from './page/products/products.component';
+import { ProductDetailsComponent } from './page/product-details/product-details.component';
+import { SorterPipe } from './pipe/sorter.pipe';
+import { FilterPipe } from './pipe/filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    OrderAdminComponent
+    OrderAdminComponent,
+    NavComponent,
+    ProductsComponent,
+    ProductDetailsComponent,
+    SorterPipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
