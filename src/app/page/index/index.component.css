@@ -1,0 +1,26 @@
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95rem;
+    height: auto;
+    overflow: hidden;
+    z-index: -100;
+    opacity: 0.2;
+    background: #3A3F44;
+
+}
+h1{
+    font-family: 'Monoton', cursive;
+    letter-spacing: 1rem;
+    font-size: 3rem;
+}
+.welcome{
+    font-family: 'Seaweed Script', cursive;
+    font-size:2rem
+}
+.header-content{
+    z-index: 1;
+    color: #ffffff;
+    font-size: 1.2rem;
+}

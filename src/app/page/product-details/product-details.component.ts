@@ -11,7 +11,8 @@ import { Order } from 'src/app/model/order';
 })
 export class ProductDetailsComponent implements OnInit {
   order:Order=new Order();
-  number2=this.router.url.split('/')[2]
+  number2=this.router.url.split('/')[2];
+  dataModal=""
 
   product$: Observable<any> = this.orderService.getAll('products', this.number2 );
 
@@ -27,6 +28,8 @@ export class ProductDetailsComponent implements OnInit {
     this.orderService.onPost('orders',JSON.stringify(this.order)).forEach(
       x=>this.order
     )
+    this.dataModal="modal"
+   
   }
-
+  
 }
