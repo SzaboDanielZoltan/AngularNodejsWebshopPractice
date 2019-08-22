@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class AdminOrdersComponent implements OnInit {
 
   // list: Order[] = [];
- //list$: Observable<any> = this.orderService.getAll();
+  list$: Observable<any> = this.orderService.getAll('orders', 0); //így a teljes tömböt kapom vissza
 
   constructor(
     private orderService: OrderService
