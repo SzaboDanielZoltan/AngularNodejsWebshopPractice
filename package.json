@@ -1,6 +1,8 @@
 {
   "name": "nodejs-angular-webshop-project",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Practice project of Macskás Memeoldal",
+  "author": "angularnodejsketjobarat@gmail.com",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
