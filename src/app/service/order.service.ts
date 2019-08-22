@@ -18,11 +18,15 @@ export class OrderService {
     private http: HttpClient
   ) { }
 
-  getAll(): Observable<any> {
-    return this.http.get('http://localhost:3210/orders/0');
+  getAll(jsonFileName, id): Observable<any> {
+    return this.http.get(`http://localhost:3210/${jsonFileName}/${id}`);
     /* return new Observable(observer => {
       observer.next(this.orders);
     }) */
+  }
+
+  onPost(jsonFileName,newObj){
+    return this.http.post(`http://localhost:3210/${jsonFileName}`,newObj)
   }
 
 }

@@ -29,6 +29,69 @@ module.exports = class DB {
     });
   }
 
+  post(newObj) {
+    return new Promise((resolve, reject) => {
+      this.getJsonArray().then(
+        dataArray => {
+          const newId = this.maxId(dataArray) + 1;
+          newObj.id = newId;
+          dataArray.push(newObj);
+          fs.writeFile(this.jsonFilePath, JSON.stringify(dataArray, null, 2), 'utf8', (err) => {
+            return reject(err);
+          })
+        },
+        err => reject(err),
+      );
+    })
+  }
+
+  update(modifiedObj) {
+    return new Promise( (resolve, reject) => {
+      this.getJsonArray().then(
+        dataArray => {
+          dataArray.forEach( (obj) => {
+            if (obj.id == modifiedObj.id) {
+              for (let k in obj) {
+                obj[k] = modifiedObj[k];
+              }
+            }
+          })
+          fs.writeFile(this.jsonFilePath, JSON.stringify(dataArray, null, 2), 'utf8', (err) => {
+            return reject(err); //valamiért rosszul működik az error kezelés
+          })
+        },
+        err => reject(err),
+      );
+    })
+  }
+
+  delete(id) {
+    return new Promise( (resolve, reject) => {
+      this.getJsonArray().then(
+        dataArray => {
+          const index = dataArray.findIndex(x => x.id == id);
+          dataArray.splice(index, 1);
+          fs.writeFile(this.jsonFilePath, JSON.stringify(dataArray, null, 2), 'utf8', (err) => {
+            return reject(err);
+          })
+        },
+        err => reject(err),
+      )
+    })
+  }
+
+  maxId(array) {
+    let result = 0;
+
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].id > result) {
+        result = array[i].id;
+      }
+    }
+
+    return result;
+  }
+
   getJsonArray() {
     return new Promise((resolve, reject) => {
       fs.readFile(this.jsonFilePath, 'utf8', (err, jsonString) => {
