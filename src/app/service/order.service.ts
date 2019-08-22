@@ -25,8 +25,16 @@ export class OrderService {
     }) */
   }
 
-  onPost(jsonFileName,newObj){
-    return this.http.post(`http://localhost:3210/${jsonFileName}`,newObj)
+  onPost(jsonFileName, newObj) {
+    return this.http.post(`http://localhost:3210/${jsonFileName}`, newObj)
+  }
+
+  onPut(jsonFileName, modifiedObj) {
+    return this.http.put(`http://localhost:3210/${jsonFileName}`, modifiedObj)
+  }
+
+  onDelete(jsonFileName, id) {
+    return this.http.delete(`http://localhost:3210/${jsonFileName}/${id}`);
   }
 
 }
