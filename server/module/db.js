@@ -65,6 +65,21 @@ module.exports = class DB {
     })
   }
 
+  delete(id) {
+    return new Promise( (resolve, reject) => {
+      this.getJsonArray().then(
+        dataArray => {
+          const index = dataArray.findIndex(x => x.id == id);
+          dataArray.splice(index, 1);
+          fs.writeFile(this.jsonFilePath, JSON.stringify(dataArray, null, 2), 'utf8', (err) => {
+            return reject(err);
+          })
+        },
+        err => reject(err),
+      )
+    })
+  }
+
   maxId(array) {
     let result = 0;
 
