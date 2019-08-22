@@ -4,11 +4,11 @@ import { Order } from 'src/app/model/order';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-order-admin',
-  templateUrl: './order-admin.component.html',
-  styleUrls: ['./order-admin.component.css']
+  selector: 'app-admin-orders',
+  templateUrl: './admin-orders.component.html',
+  styleUrls: ['./admin-orders.component.css']
 })
-export class OrderAdminComponent implements OnInit {
+export class AdminOrdersComponent implements OnInit {
 
   // list: Order[] = [];
  //list$: Observable<any> = this.orderService.getAll();

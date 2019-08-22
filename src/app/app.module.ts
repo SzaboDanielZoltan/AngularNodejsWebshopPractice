@@ -7,23 +7,31 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './page/index/index.component';
-import { OrderAdminComponent } from './page/order-admin/order-admin.component';
+import { AdminOrdersComponent } from './page/admin-orders/admin-orders.component';
 import { NavComponent } from './nav/nav.component';
 import { ProductsComponent } from './page/products/products.component';
 import { ProductDetailsComponent } from './page/product-details/product-details.component';
 import { SorterPipe } from './pipe/sorter.pipe';
 import { FilterPipe } from './pipe/filter.pipe';
+import { AdminOrderEditComponent } from './page/admin-order-edit/admin-order-edit.component';
+import { AdminNewOrderComponent } from './page/admin-new-order/admin-new-order.component';
+import { AdminProductsComponent } from './page/admin-products/admin-products.component';
+import { AdminProductEditComponent } from './page/admin-product-edit/admin-product-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    OrderAdminComponent,
+    AdminOrdersComponent,
     NavComponent,
     ProductsComponent,
     ProductDetailsComponent,
     SorterPipe,
-    FilterPipe
+    FilterPipe,
+    AdminOrderEditComponent,
+    AdminNewOrderComponent,
+    AdminProductsComponent,
+    AdminProductEditComponent
   ],
   imports: [
     BrowserModule,
