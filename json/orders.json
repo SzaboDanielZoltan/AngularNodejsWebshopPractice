@@ -16,14 +16,5 @@
     "userName": "hello",
     "userEmail": "",
     "shippingAdress": ""
-  },
-  {
-    "id": 3,
-    "insdate": "2019-08-19T17:14:28.899Z",
-    "product": 0,
-    "quantity": 0,
-    "userName": "hello",
-    "userEmail": "",
-    "shippingAdress": ""
   }
 ]
