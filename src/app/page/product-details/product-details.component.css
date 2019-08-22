@@ -1,0 +1,15 @@
+.modal-content{
+    background-image: url('/assets/hiclipart.com-id_iidcg.png');
+    background-size: 500px 500px;
+   
+    
+}
+.modal-body{
+    margin-left:30px;
+    margin-right:30px;
+   
+}
+.modal{
+    color: #fff;
+
+}

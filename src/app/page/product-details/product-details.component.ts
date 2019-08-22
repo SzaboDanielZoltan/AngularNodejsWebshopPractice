@@ -30,6 +30,7 @@ export class ProductDetailsComponent implements OnInit {
     )
     this.dataModal="modal"
    
+   
   }
   
 }
