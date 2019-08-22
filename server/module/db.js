@@ -45,6 +45,26 @@ module.exports = class DB {
     })
   }
 
+  update(modifiedObj) {
+    return new Promise( (resolve, reject) => {
+      this.getJsonArray().then(
+        dataArray => {
+          dataArray.forEach( (obj) => {
+            if (obj.id == modifiedObj.id) {
+              for (let k in obj) {
+                obj[k] = modifiedObj[k];
+              }
+            }
+          })
+          fs.writeFile(this.jsonFilePath, JSON.stringify(dataArray, null, 2), 'utf8', (err) => {
+            return reject(err); //valamiért rosszul működik az error kezelés
+          })
+        },
+        err => reject(err),
+      );
+    })
+  }
+
   maxId(array) {
     let result = 0;
 

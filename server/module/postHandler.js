@@ -13,10 +13,10 @@ module.exports = class PostHandler {
             const ordersDB = new DB(reqParams[1]);
             ordersDB.post(this.newObj).then(
                 data => res.end(JSON.stringify(data)),
-                (err) => {
-                    res.statusCode = 404;
-                    res.end(JSON.stringify(err))
-                }
+                // (err) => {
+                //     res.statusCode = 404;
+                //     res.end(JSON.stringify(err))
+                // }
             )
         })
     }
