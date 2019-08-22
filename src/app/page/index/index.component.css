@@ -2,7 +2,7 @@ video{
     position: absolute;
     top: 0;
     left: 0;
-    width: 95rem;
+    width: 100rem;
     height: auto;
     overflow: hidden;
     z-index: -100;
@@ -15,12 +15,22 @@ h1{
     letter-spacing: 1rem;
     font-size: 3rem;
 }
-.welcome{
+.welcome,
+.provide-title{
     font-family: 'Seaweed Script', cursive;
-    font-size:2rem
+    font-size:2rem;
+    color: #fff
 }
 .header-content{
     z-index: 1;
     color: #ffffff;
     font-size: 1.2rem;
+}
+.card{
+    opacity: 0.5;
+    color:#fff;
+    height: 35vh;
+}
+.card:hover{
+    opacity: 1;
 }

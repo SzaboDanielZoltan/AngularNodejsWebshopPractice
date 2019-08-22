@@ -13,6 +13,7 @@ import { ProductsComponent } from './page/products/products.component';
 import { ProductDetailsComponent } from './page/product-details/product-details.component';
 import { SorterPipe } from './pipe/sorter.pipe';
 import { FilterPipe } from './pipe/filter.pipe';
+import { ContactComponent } from './page/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FilterPipe } from './pipe/filter.pipe';
     ProductsComponent,
     ProductDetailsComponent,
     SorterPipe,
-    FilterPipe
+    FilterPipe,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
