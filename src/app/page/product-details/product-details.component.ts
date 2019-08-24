@@ -24,7 +24,7 @@ export class ProductDetailsComponent implements OnInit {
   }
   postNewOrder(){
     
-    this.orderService.onPost('orders',JSON.stringify(this.order)).forEach(
+    this.orderService.onPost('orders', JSON.stringify(this.order)).forEach(
       x=>this.order
     )
   }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { OrderService } from 'src/app/service/order.service';
 import { Order } from 'src/app/model/order';
 import { Observable } from 'rxjs';
+import { create } from 'domain';
 
 @Component({
   selector: 'app-admin-orders',
@@ -9,19 +10,24 @@ import { Observable } from 'rxjs';
   styleUrls: ['./admin-orders.component.css']
 })
 export class AdminOrdersComponent implements OnInit {
-
-  // list: Order[] = [];
-  list$: Observable<any> = this.orderService.getAll('orders', 0); //így a teljes tömböt kapom vissza
+  orderList$: Observable<any> = this.orderService.getAll('orders', 0); //így a teljes tömböt kapom vissza
+  order: Order = new Order();
 
   constructor(
     private orderService: OrderService
-  ) { }
+  ) {}
 
   ngOnInit() {
     /* this.os.getAll().subscribe(
       orders => this.list = orders,
       err => console.error(err)
     ); */
+  }
+
+  create() {
+    this.orderService.onPost('orders', JSON.stringify(this.order)).forEach(
+      x => this.order
+    )
   }
 
 }

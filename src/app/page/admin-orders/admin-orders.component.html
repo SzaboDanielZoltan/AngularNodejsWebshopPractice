@@ -12,12 +12,17 @@
             <th scope="col">Email Address</th>
             <th scope="col">Shipping Address</th>
             <th>
-              <button type="button" class="btn btn-secondary" routerLink="/admin/orders/add">New Order</button>
+              <button type="button"
+                      class="btn btn-secondary"
+                      (click)="create()"
+                      routerLink="/admin/orders/add">
+                New Order
+              </button>
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let order of list$ | async">
+          <tr *ngFor="let order of orderList$ | async">
             <th scope="row"> {{ order.id }} </th>
             <td> {{order.insdate}} </td>
             <td> {{order.product}} </td>
