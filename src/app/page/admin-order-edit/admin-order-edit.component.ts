@@ -17,7 +17,7 @@ export class AdminOrderEditComponent implements OnInit {
   ngOnInit() {
   }
 
-  edit() {
+  edit() { //nem működik még
     this.orderService.onPut('orders', JSON.stringify(this.order)).forEach(
       x => this.order
     )
