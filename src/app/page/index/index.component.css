@@ -2,7 +2,7 @@ video{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100rem;
+    width: 100%;
     height: auto;
     overflow: hidden;
     z-index: -100;
