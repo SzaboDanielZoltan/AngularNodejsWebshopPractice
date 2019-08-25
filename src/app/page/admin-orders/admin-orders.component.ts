@@ -17,10 +17,10 @@ export class AdminOrdersComponent implements OnInit {
   userSubscription: Subscription;
   selectedURL = '';
   selectedData = '';
-  counter: number = 0;
   orderDirection: number = 1;
   orderKey: string = 'id';
   filterPhrase: string = '';
+  counter: number = 0;
 
   constructor(
     private orderService: OrderService,
@@ -55,7 +55,7 @@ export class AdminOrdersComponent implements OnInit {
     this.counter += 1;
   }
 
-  setSorterKey(key: string) {
+  setSorterKey(key: string) { //még nem működik
     if (key === this.orderKey) {
       this.orderDirection = this.orderDirection === -1 ? 1 : -1;
     } else {

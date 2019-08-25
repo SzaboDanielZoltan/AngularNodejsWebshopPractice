@@ -36,7 +36,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let order of orderList$ | async">
+          <!-- <tr *ngFor="let order of orderList$ | async"> -->
+          <tr *ngFor="let order of orderList | adminOrderFilter:filterPhrase:counter | adminOrderSort:orderKey:orderDirection">
             <th scope="row"> {{ order.id }} </th>
             <td> {{order.insdate}} </td>
             <td> {{order.product}} </td>
@@ -56,7 +57,7 @@
                 </button>
                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop">
                   <a class="dropdown-item" routerLink="/admin/orders/{{ order.id }}">🖉 Edit</a>
-                  <a class="dropdown-item">⚠ Delete</a>
+                  <a class="dropdown-item" (click)="deleteOrder(order)">⚠ Delete</a>
                 </div>
               </div>
             </td>
