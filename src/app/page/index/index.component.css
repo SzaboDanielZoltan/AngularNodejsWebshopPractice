@@ -34,3 +34,11 @@ h1{
 .card:hover{
     opacity: 1;
 }
+.carousel{
+    width:100%;
+    height: auto;
+}
+.container-carousel{
+    background-image: url(/assets/hiclipart.com-id_iidcg.png);
+    background-size: 400px 400px;
+}

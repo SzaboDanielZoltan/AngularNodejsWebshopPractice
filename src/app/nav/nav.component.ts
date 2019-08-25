@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-nav',
@@ -6,10 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(@Inject(DOCUMENT) document) { }
 
   ngOnInit() {
   }
-
+  @HostListener('window:scroll', ['$event']) 
+    scrollHandler(event) {
+      if (window.pageYOffset > 0){
+      let element=document.querySelector('.navbar')
+      element.classList.add('opacity')
+        
+    }else{
+      let element=document.querySelector('.navbar')
+      element.classList.remove('opacity')
+    }}
+    
+    
 }
