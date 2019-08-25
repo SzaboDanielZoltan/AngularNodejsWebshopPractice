@@ -46,10 +46,10 @@ module.exports = class DB {
   }
 
   update(modifiedObj) {
-    return new Promise( (resolve, reject) => {
+    return new Promise((resolve, reject) => {
       this.getJsonArray().then(
         dataArray => {
-          dataArray.forEach( (obj) => {
+          dataArray.forEach((obj) => {
             if (obj.id == modifiedObj.id) {
               for (let k in obj) {
                 obj[k] = modifiedObj[k];
@@ -66,7 +66,7 @@ module.exports = class DB {
   }
 
   delete(id) {
-    return new Promise( (resolve, reject) => {
+    return new Promise((resolve, reject) => {
       this.getJsonArray().then(
         dataArray => {
           const index = dataArray.findIndex(x => x.id == id);

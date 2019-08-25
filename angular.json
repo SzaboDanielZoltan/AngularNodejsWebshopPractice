@@ -23,20 +23,21 @@
             "sourceMap": false,
             "extractCss": true,
             "namedChunks": false,
-            "showCircularDependencies": false,        
+            "showCircularDependencies": false,
             "aot": true,
             "extractLicenses": false,
             "statsJson": false,
             "progress": true,
             "vendorChunk": true,
-            "buildOptimizer": false,        
+            "buildOptimizer": false,
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootswatch/dist/slate/bootstrap.min.css"
+              "node_modules/bootswatch/dist/slate/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",

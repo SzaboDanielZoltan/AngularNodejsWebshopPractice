@@ -6,6 +6,6 @@ module.exports = class DeleteHandler {
     const ordersDB = new DB(reqParams[1]);
     const id = reqParams[2];
 
-    ordersDB.delete(id).then( data => res.end(data));
+    ordersDB.delete(id).then(data => res.end(data));
   }
 }

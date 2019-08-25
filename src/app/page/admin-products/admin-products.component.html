@@ -1,1 +1,64 @@
-<p>admin-products works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <form class="form-inline">
+        <label for="search">Search: </label>
+        <input [(ngModel)]="filterPhrase"
+               type="text"
+               id="search"
+               name="search"
+               class="form-control">
+      </form>
+      <p class="form-text text-muted">
+        It will search in description as well!
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th (click)="setSorterKey('id')"
+                class="id thtitle">ID</th>
+            <th (click)="setSorterKey('title')"
+                class="title thtitle">Title</th>
+            <th (click)="setSorterKey('type')"
+                class="type thtitle">Genre</th>
+            <th (click)="setSorterKey('publisher')"
+                class="publisher thtitle">Publisher</th>
+            <th (click)="setSorterKey('price')"
+                class="price thtitle">Price</th>
+            <th (click)="setSorterKey('metacritic')"
+                class="metacritic thtitle">Metacritic</th>
+            <th>
+              <button class="btn btn-primary btn-block"
+                      routerLink="/admin/products/0">Add new game</button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+              *ngFor="let product of productList | adminProductsFilter:filterPhrase:counter | adminProductsSort:orderKey:orderDirection">
+            <td>{{ product.id }}</td>
+            <td>{{ product.title }}</td>
+            <td>{{ product.type }}</td>
+            <td>{{ product.publisher }}</td>
+            <td>{{ product.price | currency:'EUR'}}</td>
+            <td>{{ product.metacritic }}</td>
+            <td>
+              <div class="btn-group btn-block">
+                <button type="button"
+                        class="btn btn-warning"
+                        routerLink="/admin/products/{{product.id}}">Edit</button>
+                <button type="button"
+                        class="btn btn-danger"
+                        (click)="deleteProduct(product)">Remove</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
