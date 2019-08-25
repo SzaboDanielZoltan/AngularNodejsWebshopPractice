@@ -1,5 +1,20 @@
 <div class="container">
   <div class="row">
+    <div class="col-4">
+      <form class="form-inline">
+        <label for="search">Search:&nbsp;&nbsp;</label>
+        <input type="text"
+               class="form-control"
+               id="search"
+               name="search"
+               [(ngModel)]="filterPhrase">
+      </form>
+      <!-- <p class="form-text text-muted">
+        It will search in description as well.
+      </p> -->
+    </div>
+  </div>
+  <div class="row">
     <div class="col">
       <table class="table table-hover">
         <thead>

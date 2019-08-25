@@ -11,13 +11,16 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./admin-orders.component.css']
 })
 export class AdminOrdersComponent implements OnInit {
-  //orderList$: Observable<any> = this.orderService.getAll('orders', 0); //így a teljes tömböt kapom vissza
+  orderList$: Observable<any> = this.orderService.getAll('orders', 0); //így a teljes tömböt kapom vissza
   orderList: Order[];
   order: Order = new Order();
   userSubscription: Subscription;
   selectedURL = '';
   selectedData = '';
-
+  counter: number = 0;
+  orderDirection: number = 1;
+  orderKey: string = 'id';
+  filterPhrase: string = '';
 
   constructor(
     private orderService: OrderService,
@@ -52,7 +55,15 @@ export class AdminOrdersComponent implements OnInit {
     this.counter += 1;
   }
 
-  
+  setSorterKey(key: string) {
+    if (key === this.orderKey) {
+      this.orderDirection = this.orderDirection === -1 ? 1 : -1;
+    } else {
+      this.orderDirection = 1;
+    }
+    this.orderKey = key;
+    
+  }
 
   ngOnDestroy() {
     this.userSubscription.unsubscribe();
