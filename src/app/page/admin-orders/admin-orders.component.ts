@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { OrderService } from 'src/app/service/order.service';
-import { Order } from 'src/app/model/order';
 import { Observable } from 'rxjs';
-import { create } from 'domain';
+import { Order } from 'src/app/model/order';
+import { OrderService } from 'src/app/service/order.service';
 
 @Component({
   selector: 'app-admin-orders',
@@ -22,12 +21,6 @@ export class AdminOrdersComponent implements OnInit {
       orders => this.list = orders,
       err => console.error(err)
     ); */
-  }
-
-  create() {
-    this.orderService.onPost('orders', JSON.stringify(this.order)).forEach(
-      x => this.order
-    )
   }
 
 }

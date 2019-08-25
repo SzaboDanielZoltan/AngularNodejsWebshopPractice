@@ -13,9 +13,8 @@
             <th scope="col">Shipping Address</th>
             <th>
               <button type="button"
-                      class="btn btn-secondary"
-                      (click)="create()"
-                      routerLink="/admin/orders/add">
+                      class="btn btn-light"
+                      routerLink="/admin/orders/add"> <!--??? Mindegy, mit írok ide, folyton az order-edit komponenst jeleníti meg.--> <!--A routing-nál előrébb kellett helyezni az útvonalát, akkor működik. Úgy tűnik, a :id bezavart.-->
                 New Order
               </button>
             </th>
@@ -40,9 +39,9 @@
                         aria-expanded="false">
                   Options
                 </button>
-                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                  <a class="dropdown-item" routerLink="/admin/orders/{{ order.id }}">Edit</a>
-                  <a class="dropdown-item">Delete</a>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop">
+                  <a class="dropdown-item" routerLink="/admin/orders/{{ order.id }}">🖉 Edit</a>
+                  <a class="dropdown-item">⚠ Delete</a>
                 </div>
               </div>
             </td>
