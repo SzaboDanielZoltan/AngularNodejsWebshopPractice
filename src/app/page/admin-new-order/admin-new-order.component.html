@@ -1,6 +1,11 @@
 <div class="container">
+    <div class="row">
+        <div class="col-4 offset-4">
+          <h1>New Order</h1>
+        </div>
+      </div>
   <div class="row">
-    <div class="col">
+    <div class="col-4 offset-4">
       <form action="">
         <!-- <div class="form-group">
           <label for="orderID">Order ID</label>
@@ -46,11 +51,11 @@
                  id="shippingAddress"
                  placeholder="">
         </div>
-        <div class="btn-group col-4 offset-4" role="group">
+        <div class="btn-group col-10 offset-1" role="group">
           <button type="button"
                   class="btn btn-success"
-                  (click)="create()"
-                  routerLink="/admin/orders">Add New Order</button>
+                  (click)="create($event)"
+                  routerLink="/admin/orders">Add</button>
           <button type="button"
                   class="btn btn-secondary"
                   routerLink="/admin/orders">Cancel</button>

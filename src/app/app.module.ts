@@ -19,6 +19,8 @@ import { AdminProductsComponent } from './page/admin-products/admin-products.com
 import { AdminProductEditComponent } from './page/admin-product-edit/admin-product-edit.component';
 import { AdminProductsFilterPipe } from './pipe/admin-products-filter.pipe';
 import { AdminProductsSortPipe } from './pipe/admin-products-sort.pipe';
+import { AdminOrderSortPipe } from './pipe/admin-order-sort.pipe';
+import { AdminOrderFilterPipe } from './pipe/admin-order-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { AdminProductsSortPipe } from './pipe/admin-products-sort.pipe';
     AdminProductsComponent,
     AdminProductEditComponent,
     AdminProductsFilterPipe,
-    AdminProductsSortPipe
+    AdminProductsSortPipe,
+    AdminOrderSortPipe,
+    AdminOrderFilterPipe
   ],
   imports: [
     BrowserModule,

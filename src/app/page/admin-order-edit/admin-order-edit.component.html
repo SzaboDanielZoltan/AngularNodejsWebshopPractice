@@ -1,57 +1,69 @@
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col-4 offset-4">
+      <h1>Edit Order</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 offset-4">
       <form action="">
         <div class="form-group">
           <label for="orderID">Order ID</label>
           <input type="number"
                  class="form-control"
-                 id="orderID">
+                 id="orderID"
+                 [(ngModel)]="order.id">
         </div>
         <div class="form-group">
           <label for="insdate">Date of Order</label>
           <input type="date"
                  class="form-control"
-                 id="insdate">
+                 id="insdate"
+                 [(ngModel)]="order.insdate">
         </div>
         <div class="form-group">
           <label for="product">Product ID</label>
           <input type="number"
                  class="form-control"
-                 id="product">
+                 id="product"
+                 [(ngModel)]="order.product">
         </div>
         <div class="form-group">
           <label for="quantity">Quantity</label>
           <input type="number"
                  class="form-control"
-                 id="quantity">
+                 id="quantity"
+                 [(ngModel)]="order.quantity">
         </div>
         <div class="form-group">
           <label for="userName">Name</label>
           <input type="text"
                  class="form-control"
-                 id="userName">
+                 id="userName"
+                 [(ngModel)]="order.userName">
         </div>
         <div class="form-group">
           <label for="userEmail">Email Address</label>
           <input type="email"
                  class="form-control"
-                 id="userEmail">
+                 id="userEmail"
+                 [(ngModel)]="order.userEmail">
         </div>
         <div class="form-group">
           <label for="shippingAddress">Shipping Address</label>
           <input type="text"
                  class="form-control"
-                 id="shippingAddress">
+                 id="shippingAddress"
+                 [(ngModel)]="order.shippingAddress">
         </div>
-        <div class="btn-group col-4 offset-4" role="group">
+        <div class="btn-group col-10 offset-1" role="group">
           <button type="button"
                   class="btn btn-success"
-                  (click)="edit()"
-                  routerLink="/admin/orders">Save Changes</button>
+                  (click)="edit($event)"
+                  routerLink="/admin/orders">Save</button>
           <button type="button"
                   class="btn btn-danger"
-                  routerLink="/admin/orders">Discard Changes</button>
+                  routerLink="/admin/orders">Discard</button>
         </div>
       </form>
     </div>
