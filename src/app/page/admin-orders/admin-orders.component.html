@@ -37,7 +37,9 @@
         </thead>
         <tbody>
           <!-- <tr *ngFor="let order of orderList$ | async"> -->
-          <tr *ngFor="let order of orderList | adminOrderFilter:filterPhrase:counter">
+          <tr *ngFor="let order of orderList
+           | adminOrderFilter:filterPhrase:counter 
+           | adminOrderSort:orderKey:orderDirection">
             <th scope="row"> {{ order.id }} </th>
             <td> {{order.insdate | date }} </td>
             <td> {{order.product}} </td>

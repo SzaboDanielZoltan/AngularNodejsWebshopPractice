@@ -17,8 +17,8 @@ export class AdminOrdersComponent implements OnInit {
   userSubscription: Subscription;
   selectedURL = '';
   selectedData: string = '';
+  orderKey: string = ''; //ha ide peírom az id-t, akkor az teljesen megöli a táblázatot
   orderDirection: number = 1;
-  orderKey: string = 'id';
   filterPhrase: string = '';
   counter: number = 0;
 
@@ -61,8 +61,8 @@ export class AdminOrdersComponent implements OnInit {
     } else {
       this.orderDirection = 1;
     }
-    this.orderKey = key;
     
+    this.orderKey = key;
   }
 
   ngOnDestroy() {
