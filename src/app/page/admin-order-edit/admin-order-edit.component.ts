@@ -22,7 +22,7 @@ export class AdminOrderEditComponent implements OnInit {
       this.selectedURL = this.router.url.split('/')[2];
       this.dataToEdit = this.router.url.split('/')[3];
       this.orderService.getAll(this.selectedURL, this.dataToEdit).forEach(
-        product => this.order = order
+        order => this.order = order
       )
     }
 
@@ -32,7 +32,8 @@ export class AdminOrderEditComponent implements OnInit {
   edit(event: Event) {
     event.preventDefault();
     this.orderService.onPut(this.selectedURL, JSON.stringify(this.order)).forEach(
-      x => this.order
+      //x => this.order
+      data => data
     )
   }
 }

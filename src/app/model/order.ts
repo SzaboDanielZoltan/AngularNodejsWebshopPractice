@@ -5,5 +5,5 @@ export class Order {
   quantity: number = 0;
   userName: string = '';
   userEmail: string = '';
-  shippingAdress: string = '';
+  shippingAddress: string = '';
 }
