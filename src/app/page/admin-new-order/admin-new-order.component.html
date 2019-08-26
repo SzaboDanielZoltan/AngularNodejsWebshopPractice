@@ -17,31 +17,41 @@
           <label for="insdate">Date of Order</label>
           <input type="date"
                  class="form-control"
-                 id="insdate">
+                 id="insdate"
+                 name="insdate"
+                 [(ngModel)]="order.insdate">
         </div>
         <div class="form-group">
           <label for="product">Product ID</label>
           <input type="number"
                  class="form-control"
-                 id="product">
+                 id="product"
+                 name="product"
+                 [(ngModel)]="order.product">
         </div>
         <div class="form-group">
           <label for="quantity">Quantity</label>
           <input type="number"
                  class="form-control"
-                 id="quantity">
+                 id="quantity"
+                 name="quantity"
+                 [(ngModel)]="order.quantity">
         </div>
         <div class="form-group">
           <label for="userName">Name</label>
           <input type="text"
                  class="form-control"
-                 id="userName">
+                 id="userName"
+                 name="userName"
+                 [(ngModel)]="order.userName">
         </div>
         <div class="form-group">
           <label for="userEmail">Email Address</label>
           <input type="email"
                  class="form-control"
                  id="userEmail"
+                 name="userEmail"
+                 [(ngModel)]="order.userEmail"
                  placeholder="example@neworder.com">
         </div>
         <div class="form-group">
@@ -49,6 +59,8 @@
           <input type="text"
                  class="form-control"
                  id="shippingAddress"
+                 name="shippingAddress"
+                 [(ngModel)]="order.shippingAddress"
                  placeholder="">
         </div>
         <div class="btn-group col-10 offset-1" role="group">

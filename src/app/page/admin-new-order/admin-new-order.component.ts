@@ -27,7 +27,7 @@ export class AdminNewOrderComponent implements OnInit {
 
   create(event: Event) {
     event.preventDefault();
-    this.orderService.onPost(this.selectedURL, JSON.stringify(this.order)).forEach(
+    this.orderService.onPost(this.selectedURL, this.order).forEach(
       x => this.order
     )
   }
