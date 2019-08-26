@@ -36,8 +36,8 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let order of orderList$ | async">
-          <!-- <tr *ngFor="let order of orderList"> -->
+          <!-- <tr *ngFor="let order of orderList$ | async"> -->
+          <tr *ngFor="let order of orderList">
             <th scope="row"> {{ order.id }} </th>
             <td> {{order.insdate}} </td>
             <td> {{order.product}} </td>
