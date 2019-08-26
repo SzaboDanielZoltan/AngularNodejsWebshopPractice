@@ -12,11 +12,11 @@ import { Subscription } from 'rxjs';
 })
 export class AdminOrdersComponent implements OnInit {
   orderList$: Observable<any> = this.orderService.getAll('orders', 0); //így a teljes tömböt kapom vissza
-  orderList: Order[];
+  orderList: Order[] = [];
   order: Order = new Order();
   userSubscription: Subscription;
   selectedURL = '';
-  selectedData = '';
+  selectedData: string = '';
   orderDirection: number = 1;
   orderKey: string = 'id';
   filterPhrase: string = '';

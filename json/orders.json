@@ -15,7 +15,7 @@
     "quantity": 0,
     "userName": "hello",
     "userEmail": "",
-    "shippingAdress": ""
+    "shippingAddress": ""
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "quantity": 0,
     "userName": "",
     "userEmail": "",
-    "shippingAdress": ""
+    "shippingAddress": ""
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "quantity": 0,
     "userName": "",
     "userEmail": "",
-    "shippingAdress": ""
+    "shippingAddress": ""
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "quantity": 0,
     "userName": "",
     "userEmail": "",
-    "shippingAdress": ""
+    "shippingAddress": ""
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "quantity": 0,
     "userName": "",
     "userEmail": "",
-    "shippingAdress": ""
+    "shippingAddress": ""
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "quantity": 0,
     "userName": "",
     "userEmail": "",
-    "shippingAdress": ""
+    "shippingAddress": ""
   },
   {
     "id": 8,
@@ -69,6 +69,6 @@
     "quantity": 0,
     "userName": "",
     "userEmail": "",
-    "shippingAdress": ""
+    "shippingAddress": ""
   }
 ]
