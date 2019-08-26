@@ -37,21 +37,21 @@
                         <input  required #userName="ngModel" class="form-control" type="text"  
                                 id="name" [(ngModel)]="order.userName" name="userName"
                                 pattern="[A-Za-z- ]{1,50}">
-                        <small  [hidden]="userName.valid || userName.pristine" class="text-danger">Invalid!</small>
+                        <small  [hidden]="userName.invalid || userName.pristine" class="text-danger">Invalid!</small>
                     </div>
                     <div class="from-group">
                         <label class="bg-primary" for="email">Email *:</label>
                         <input  required #userEmail="ngModel" class="form-control" type="email" 
                                 id="email" [(ngModel)]="order.userEmail" 
                                 name="userEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                        <small [hidden]="userEmail.valid || userEmail.pristine" class="text-danger">Invalid!</small>
+                        <small [hidden]="userEmail.invalid || userEmail.pristine" class="text-danger">Invalid!</small>
                     </div>
                     <div class="form-group">
                         <label class="bg-primary" for="addresss">Shipping Address *:</label>
                         <input  required #userAddress="ngModel" class="form-control"
                                 type="text" id="address" [(ngModel)]="order.shippingAdress"
                                 name="shippingAdress">
-                        <small [hidden]="userAddress.valid || userAddress.pristine" class="text-danger">Invalid!</small>
+                        <small [hidden]="userAddress.invalid || userAddress.pristine" class="text-danger">Invalid!</small>
                     </div>
                     <div class="form-group">
                         <label class="bg-primary" for="quantity">Quantity</label>

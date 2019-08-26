@@ -1,5 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"  
-    (scroll)="scrollHandler($event) ">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top opacity"  
+    [ngStyle]="{'opacity':opacity}"
+    >
         <a routerLink="/" class="navbar-brand">
              <img src="/assets/storeLogo/icons8-epic-games-100.png" alt="store-logo">
          </a>
