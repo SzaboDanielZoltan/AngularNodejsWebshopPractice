@@ -21,54 +21,9 @@
     "id": 3,
     "insdate": "2019-08-22T15:29:26.027Z",
     "product": 0,
-    "quantity": 0,
+    "quantity": 1,
     "userName": "",
     "userEmail": "",
-    "shippingAddress": ""
-  },
-  {
-    "id": 4,
-    "insdate": "2019-08-24T23:40:52.637Z",
-    "product": 0,
-    "quantity": 0,
-    "userName": "",
-    "userEmail": "",
-    "shippingAddress": ""
-  },
-  {
-    "id": 5,
-    "insdate": "2019-08-24T23:41:05.376Z",
-    "product": 0,
-    "quantity": 0,
-    "userName": "",
-    "userEmail": "",
-    "shippingAddress": ""
-  },
-  {
-    "id": 6,
-    "insdate": "2019-08-24T23:42:34.064Z",
-    "product": 0,
-    "quantity": 0,
-    "userName": "",
-    "userEmail": "",
-    "shippingAddress": ""
-  },
-  {
-    "id": 7,
-    "insdate": "2019-08-25T19:03:50.550Z",
-    "product": 0,
-    "quantity": 0,
-    "userName": "",
-    "userEmail": "",
-    "shippingAddress": ""
-  },
-  {
-    "id": 8,
-    "insdate": "2019-08-25T19:28:54.042Z",
-    "product": 0,
-    "quantity": 0,
-    "userName": "",
-    "userEmail": "",
-    "shippingAddress": ""
+    "shippingAddress": "ascdvfgb"
   }
 ]
