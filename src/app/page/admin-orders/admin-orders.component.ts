@@ -17,7 +17,7 @@ export class AdminOrdersComponent implements OnInit {
   userSubscription: Subscription;
   selectedURL = '';
   selectedData: string = '';
-  orderKey: string = ''; //ha ide peírom az id-t, akkor az teljesen megöli a táblázatot
+  orderKey: string = 'id'; //ha ide peírom az id-t, akkor az teljesen megöli a táblázatot
   orderDirection: number = 1;
   filterPhrase: string = '';
   counter: number = 0;
