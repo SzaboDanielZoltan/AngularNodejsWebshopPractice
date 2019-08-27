@@ -16,3 +16,6 @@
 .modal-text{
     font-size: 1.1rem
 }
+.card{
+    min-width: 200px;
+}
