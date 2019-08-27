@@ -25,8 +25,8 @@ export class OrderService {
     }) */
   }
 
-  onPost(jsonFileName,newObj){
-    return this.http.post(`http://localhost:3210/${jsonFileName}`,newObj)
+  onPost(jsonFileName, newObj) {
+    return this.http.post(`http://localhost:3210/${jsonFileName}`, newObj)
   }
 
 }
