@@ -15,13 +15,43 @@
             </p>
         </div>
         <div class="col-4">
-            <img style="height: 200px; width: 100%; display: block;"
-             src="{{ (product$ | async)?.pic}}"
-             alt="Card image">
-             <p>{{ (product$ | async)?.type}}</p>
-             <p>{{ (product$ | async)?.metacritic}}</p>
-             <p>{{ (product$ | async)?.release}}</p>
-             <p>{{ (product$ | async)?.publisher}}</p>
+            <div class="row">
+                <img style="height: auto; width: 100%; display: block;"
+                 src="{{ (product$ | async)?.pic}}"
+                 alt="Card image">
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p>METACRITIC SCORE:</p>
+                </div>
+                <div class="col-8">
+                    <p>{{ (product$ | async)?.metacritic}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p>RELEASE DATE:</p>
+                </div>
+                <div class="col-8">
+                    <p>{{ (product$ | async)?.release}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <p>DEVELOPER:</p>
+                </div>
+                <div class="col-8">
+                    <p>{{ (product$ | async)?.publisher}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                   <p>GENRE:</p>
+                </div>
+                <div class="col-8">
+                    <p>{{ (product$ | async)?.type}}</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
