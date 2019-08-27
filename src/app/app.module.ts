@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './page/index/index.component';
@@ -21,6 +20,7 @@ import { AdminProductsFilterPipe } from './pipe/admin-products-filter.pipe';
 import { AdminProductsSortPipe } from './pipe/admin-products-sort.pipe';
 import { AdminOrderSortPipe } from './pipe/admin-order-sort.pipe';
 import { AdminOrderFilterPipe } from './pipe/admin-order-filter.pipe';
+import { ContactComponent } from './page/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,8 @@ import { AdminOrderFilterPipe } from './pipe/admin-order-filter.pipe';
     AdminProductsFilterPipe,
     AdminProductsSortPipe,
     AdminOrderSortPipe,
-    AdminOrderFilterPipe
+    AdminOrderFilterPipe,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

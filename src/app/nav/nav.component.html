@@ -1,4 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top opacity"  
+    [ngStyle]="{'opacity':opacity}">
+        <a routerLink="/" class="navbar-brand">
+             <img src="/assets/storeLogo/icons8-epic-games-100.png" alt="store-logo">
+         </a>
     <button class="navbar-toggler"
             type="button"
             data-toggle="collapse"
@@ -19,6 +23,10 @@
             <li class="nav-item">
                 <a class="nav-link"
                    routerLink="/products">Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   routerLink="/contact">Contact us</a>
             </li>
         </ul>
         <ul class="navbar-nav mr-auto">

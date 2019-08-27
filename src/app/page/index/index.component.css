@@ -1,0 +1,44 @@
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: -100;
+    opacity: 0.2;
+    background: #3A3F44;
+
+}
+h1{
+    font-family: 'Monoton', cursive;
+    letter-spacing: 1rem;
+    font-size: 3rem;
+}
+.welcome,
+.provide-title{
+    font-family: 'Seaweed Script', cursive;
+    font-size:2rem;
+    color: #fff
+}
+.header-content{
+    z-index: 1;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.card{
+    opacity: 0.5;
+    color:#fff;
+    height: 35vh;
+}
+.card:hover{
+    opacity: 1;
+}
+.carousel{
+    width:100%;
+    height: auto;
+}
+.container-carousel{
+    background-image: url(/assets/hiclipart.com-id_iidcg.png);
+    background-size: 400px 400px;
+}

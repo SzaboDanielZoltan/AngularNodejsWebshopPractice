@@ -250,17 +250,5 @@
     "metacritic": 72,
     "price": 49.99,
     "pic": "assets/gamepic/motogp.jpg"
-  },
-  {
-    "id": 22,
-    "title": "",
-    "type": "",
-    "short": "",
-    "description": "",
-    "release": "",
-    "publisher": "",
-    "metacritic": 0,
-    "price": 0,
-    "pic": ""
   }
 ]

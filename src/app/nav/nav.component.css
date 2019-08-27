@@ -1,0 +1,22 @@
+img{
+    width:50px;
+    height: auto;
+}
+.nav-link:focus,
+.nav-link:hover {
+    background-image: none;
+    background-color:#3A3F44 ;
+    border-bottom: 5px #5bc0de solid;
+   
+}
+.nav-link{
+    border:none;
+    font-size: 1.2rem;
+}
+nav:hover{
+    opacity: 1 !important;
+}
+nav{
+  
+    transition: all 0.5s
+}
