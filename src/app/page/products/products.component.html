@@ -1,20 +1,23 @@
 <div class="container">
   <div class="row">
-    <div class="col-6">
+    <div class="col-6 mt-2">
       <input type="text"
              name="search-box"
              id="search-box"
              class="form-control text-secondary"
-             placeholder="find a game"
+             placeholder="Find a game"
              [(ngModel)]="filterPhrase">
+             <p class="form-text text-muted" style="position: relative; left: 16%">
+              It will search in description as well!
+            </p>
     </div>
   </div>
   <div class="row ">
-    <div class="col-lg-4 col-sm-12"
+    <div class="col-lg-4 col-md-6 col-sm-12"
          *ngFor="let product of list$ | async | filter:filterPhrase">
       <div class="card mb-3">
         <h3 class="card-header" style="height:100px; width:100%">{{product.title}}</h3>
-        <img style="height: 200px; width: 100%; display: block;"
+        <img style="height: auto; width: 100%; display: block;"
              src="{{product.pic}}"
              alt="Card image">
         <div class="card-body" style="height:250px ; width:auto">
