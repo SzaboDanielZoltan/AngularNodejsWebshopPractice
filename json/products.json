@@ -238,17 +238,5 @@
     "metacritic": 86,
     "price": 19.99,
     "pic": "assets/gamepic/rocketleague.jpg"
-  },
-  {
-    "id": 21,
-    "title": "MotoGP™19",
-    "type": "Sports",
-    "short": "Race with official 2019 Championship riders! Have fun with the new multiplayer experience and become Race Director. Challenge the new AI, take a ride through the history of the MotoGP™ and unleash your creativity with the graphic editors.",
-    "description": "The official videogame of the most popular motorcycle championship in the world is back with a new chapter full of surprises! All the adrenaline of the 2019 season right in your hands!Race with all the official riders of the MotoGP™, Moto2™, Moto3™, Red Bull MotoGP™ Rookies Cup classes and the new MotoE™ on 19 different tracks. All the passion of the MotoGP™ from the 500 2-strokes to the Modern Era.Access the Historical Challenges mode and relive the most exciting rivalries trough time attacks and specific scenarios to recreate the moments that shaped the history of the MotoGP™.",
-    "release": "6 Jun, 2019",
-    "publisher": "Milestone S.r.l.",
-    "metacritic": 72,
-    "price": 49.99,
-    "pic": "assets/gamepic/motogp.jpg"
   }
 ]
