@@ -21,6 +21,7 @@ import { AdminProductsSortPipe } from './pipe/admin-products-sort.pipe';
 import { AdminOrderSortPipe } from './pipe/admin-order-sort.pipe';
 import { AdminOrderFilterPipe } from './pipe/admin-order-filter.pipe';
 import { ContactComponent } from './page/contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ContactComponent } from './page/contact/contact.component';
     AdminProductsSortPipe,
     AdminOrderSortPipe,
     AdminOrderFilterPipe,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

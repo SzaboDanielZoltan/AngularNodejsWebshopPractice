@@ -1,10 +1,17 @@
-<!-- Ide jön a navigációs komponens -->
-<app-nav [opacity]="opacity"></app-nav>
+<header>
+  <app-nav [opacity]="opacity"></app-nav>
+</header>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <router-outlet></router-outlet>
+<main>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
-</div>
+</main>
+
+<aside>
+    <app-footer></app-footer>
+</aside>
