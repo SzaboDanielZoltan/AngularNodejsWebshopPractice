@@ -1,4 +1,4 @@
-video{
+video {
     position: absolute;
     top: 0;
     left: 0;
@@ -10,7 +10,7 @@ video{
     background: #3A3F44;
 
 }
-h1{
+h1 {
     font-family: 'Monoton', cursive;
     letter-spacing: 1rem;
     font-size: 3rem;
@@ -26,19 +26,19 @@ h1{
     color: #ffffff;
     font-size: 1.2rem;
 }
-.card{
+.card {
     opacity: 0.5;
     color:#fff;
     height: 35vh;
 }
-.card:hover{
+.card:hover {
     opacity: 1;
 }
-.carousel{
+.carousel {
     width:100%;
     height: auto;
 }
-.container-carousel{
+.container-carousel {
     background-image: url(/assets/hiclipart.com-id_iidcg.png);
     background-size: 400px 400px;
 }
