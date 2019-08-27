@@ -24,12 +24,11 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit() {
   }
   postNewOrder(){
-    
+    this.order.product=parseInt(this.number2);
     this.orderService.onPost('orders', JSON.stringify(this.order)).forEach(
-      x=>this.order
-    )
+      x => this.router.navigateByUrl('/products')
+      )
     this.dataModal="modal"
-   
    
   }
   

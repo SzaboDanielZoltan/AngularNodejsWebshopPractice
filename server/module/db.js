@@ -39,6 +39,7 @@ module.exports = class DB {
           fs.writeFile(this.jsonFilePath, JSON.stringify(dataArray, null, 2), 'utf8', (err) => {
             return reject(err);
           })
+          resolve(newObj);
         },
         err => reject(err),
       );
