@@ -14,6 +14,7 @@ export class ProductsComponent implements OnInit {
   list$: Observable<any> = this.orderService.getAll('products', '0');
   orderKey: string = '';
   orderDirection: number = 1;
+  filterPhrase:string=''
 
   constructor(
     private orderService: OrderService,
