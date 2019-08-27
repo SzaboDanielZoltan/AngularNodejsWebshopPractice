@@ -1,17 +1,29 @@
 
 <div class="jumbotron">
-    <h1 class="display-3">{{ (product$ | async)?.title}}</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-        featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <p class="lead">
-        <a class="btn btn-primary btn-lg"
-           href="#"
-           role="button"
-           data-toggle="modal"
-           data-target="#myModal">Buy</a>
-    </p>
+    <div class="row">
+        <div class="col-8">
+            <h1 class="display-3">{{ (product$ | async)?.title}}</h1>
+            <p class="lead">{{ (product$ | async)?.short}}</p>
+            <hr class="my-4">
+            <p>{{ (product$ | async)?.description}}</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg"
+                   href="#"
+                   role="button"
+                   data-toggle="modal"
+                   data-target="#myModal">Buy</a>
+            </p>
+        </div>
+        <div class="col-4">
+            <img style="height: 200px; width: 100%; display: block;"
+             src="{{ (product$ | async)?.pic}}"
+             alt="Card image">
+             <p>{{ (product$ | async)?.type}}</p>
+             <p>{{ (product$ | async)?.metacritic}}</p>
+             <p>{{ (product$ | async)?.release}}</p>
+             <p>{{ (product$ | async)?.publisher}}</p>
+        </div>
+    </div>
 </div>
 
 <div class="modal  mr-5"  id="myModal" [ngClass]="data-dismiss">
