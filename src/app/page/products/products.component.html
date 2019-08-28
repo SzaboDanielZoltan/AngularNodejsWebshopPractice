@@ -7,7 +7,7 @@
              class="form-control text-secondary"
              placeholder="Find a game"
              [(ngModel)]="filterPhrase">
-             <p class="form-text text-muted" style="position: relative; left: 16%">
+             <p class="form-text text-muted" style="position: relative; left: 1%">
               It will search in description as well!
             </p>
     </div>
@@ -20,9 +20,9 @@
         <img style="height: auto; width: 100%; display: block;"
              src="{{product.pic}}"
              alt="Card image">
-        <div class="card-body" style="height:250px ; width:auto">
+        <div class="card-body" style="height:250px; width:auto; position: relative">
           <p class="card-text">{{product.short}}</p>
-          <div>{{product.price | currency:'USD'}}</div>
+          <div style="position: absolute; bottom: 7%">{{product.price | currency:'USD'}}</div>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item text-center btn-outline-info" routerLink="/products/{{product.id}}">Show more</li>

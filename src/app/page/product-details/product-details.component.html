@@ -20,36 +20,38 @@
                  src="{{ (product$ | async)?.pic}}"
                  alt="Card image">
             </div>
-            <div class="row">
-                <div class="col-4">
-                    <p>METACRITIC SCORE:</p>
+            <div class="container-fluid mt-2" style="border: 1px solid #555">
+                <div class="row mt-3">
+                    <div class="col-5">
+                        <p>METACRITIC SCORE:</p>
+                    </div>
+                    <div class="col-7">
+                        <p>{{ (product$ | async)?.metacritic}}</p>
+                    </div>
                 </div>
-                <div class="col-8">
-                    <p>{{ (product$ | async)?.metacritic}}</p>
+                <div class="row">
+                    <div class="col-5">
+                        <p>RELEASE DATE:</p>
+                    </div>
+                    <div class="col-7">
+                        <p>{{ (product$ | async)?.release}}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <p>RELEASE DATE:</p>
+                <div class="row">
+                    <div class="col-5">
+                        <p>DEVELOPER:</p>
+                    </div>
+                    <div class="col-7">
+                        <p>{{ (product$ | async)?.publisher}}</p>
+                    </div>
                 </div>
-                <div class="col-8">
-                    <p>{{ (product$ | async)?.release}}</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <p>DEVELOPER:</p>
-                </div>
-                <div class="col-8">
-                    <p>{{ (product$ | async)?.publisher}}</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                   <p>GENRE:</p>
-                </div>
-                <div class="col-8">
-                    <p>{{ (product$ | async)?.type}}</p>
+                <div class="row">
+                    <div class="col-5">
+                       <p>GENRE:</p>
+                    </div>
+                    <div class="col-7">
+                        <p>{{ (product$ | async)?.type}}</p>
+                    </div>
                 </div>
             </div>
         </div>

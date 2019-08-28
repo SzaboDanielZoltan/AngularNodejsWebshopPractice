@@ -9,7 +9,8 @@
     "publisher": "Activision",
     "metacritic": 88,
     "price": 59.99,
-    "pic": "assets/gamepic/sekiro.jpg"
+    "pic": "assets/gamepic/sekiro.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/sekiro-shadows-die-twice"
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "publisher": "PUBG Corporation",
     "metacritic": 86,
     "price": 29.99,
-    "pic": "assets/gamepic/pubg.jpg"
+    "pic": "assets/gamepic/pubg.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/playerunknowns-battlegrounds"
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "publisher": "Rockstar Games",
     "metacritic": 96,
     "price": 29.99,
-    "pic": "assets/gamepic/gtaV.jpg"
+    "pic": "assets/gamepic/gtaV.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/grand-theft-auto-v"
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "publisher": "Facepunch Studios",
     "metacritic": 69,
     "price": 29.99,
-    "pic": "assets/gamepic/rust.jpg"
+    "pic": "assets/gamepic/rust.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/rust"
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "publisher": "Ubisoft",
     "metacritic": 78,
     "price": 19.99,
-    "pic": "assets/gamepic/rainbow6.jpg"
+    "pic": "assets/gamepic/rainbow6.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/tom-clancys-rainbow-six-siege"
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "publisher": "Bungie",
     "metacritic": 83,
     "price": 34.99,
-    "pic": "assets/gamepic/destiny2.jpg"
+    "pic": "assets/gamepic/destiny2.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/destiny-2"
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
     "publisher": "Ubisoft",
     "metacritic": 72,
     "price": 7.49,
-    "pic": "assets/gamepic/steep.jpg"
+    "pic": "assets/gamepic/steep.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/steep"
   },
   {
     "id": 8,
@@ -93,7 +100,8 @@
     "publisher": "Ubisoft",
     "metacritic": 86,
     "price": 59.99,
-    "pic": "assets/gamepic/assassinscreedodyssey.jpg"
+    "pic": "assets/gamepic/assassinscreedodyssey.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/assassins-creed-odyssey"
   },
   {
     "id": 9,
@@ -105,7 +113,8 @@
     "publisher": "Activision",
     "metacritic": 74,
     "price": 59.99,
-    "pic": "assets/gamepic/codblackops2.jpg"
+    "pic": "assets/gamepic/codblackops2.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/call-of-duty-black-ops-ii"
   },
   {
     "id": 10,
@@ -117,7 +126,8 @@
     "publisher": "Bethesda Softworks",
     "metacritic": 74,
     "price": 39.99,
-    "pic": "assets/gamepic/skyrim.jpg"
+    "pic": "assets/gamepic/skyrim.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/the-elder-scrolls-v-skyrim-special-edition"
   },
   {
     "id": 11,
@@ -129,7 +139,8 @@
     "publisher": "Bethesda Softworks",
     "metacritic": 85,
     "price": 19.99,
-    "pic": "assets/gamepic/doom.jpg"
+    "pic": "assets/gamepic/doom.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/doom"
   },
   {
     "id": 12,
@@ -141,7 +152,8 @@
     "publisher": "SEGA",
     "metacritic": 85,
     "price": 59.99,
-    "pic": "assets/gamepic/totalwar.jpg"
+    "pic": "assets/gamepic/totalwar.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/total-war-three-kingdoms"
   },
   {
     "id": 13,
@@ -153,7 +165,8 @@
     "publisher": "SEGA",
     "metacritic": 86,
     "price": 54.99,
-    "pic": "assets/gamepic/footballmanager.jpg"
+    "pic": "assets/gamepic/footballmanager.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/football-manager-2019"
   },
   {
     "id": 14,
@@ -165,7 +178,8 @@
     "publisher": "Starbreeze Publishing AB",
     "metacritic": 79,
     "price": 9.99,
-    "pic": "assets/gamepic/payday2.jpg"
+    "pic": "assets/gamepic/payday2.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/payday-2"
   },
   {
     "id": 15,
@@ -177,7 +191,8 @@
     "publisher": "2K",
     "metacritic": 79,
     "price": 9.99,
-    "pic": "assets/gamepic/borderlands2.jpg"
+    "pic": "assets/gamepic/borderlands2.jpg",
+    "metacriticLink": "https://www.metacritic.com/game/pc/borderlands-2"
   },
   {
     "id": 16,
@@ -189,7 +204,8 @@
     "publisher": "Crytek",
     "metacritic": 80,
     "price": 29.99,
-    "pic": "assets/gamepic/hunt.jpg"
+    "pic": "assets/gamepic/hunt.jpg",
+    "metacriticLink": ""
   },
   {
     "id": 17,
@@ -201,7 +217,8 @@
     "publisher": "Gun Media",
     "metacritic": 70,
     "price": 18.74,
-    "pic": "assets/gamepic/lof2.jpg"
+    "pic": "assets/gamepic/lof2.jpg",
+    "metacriticLink": ""
   },
   {
     "id": 18,
@@ -225,7 +242,8 @@
     "publisher": "Paradox Interactive",
     "metacritic": 82,
     "price": 49.99,
-    "pic": "assets/gamepic/ageofwonders.jpg"
+    "pic": "assets/gamepic/ageofwonders.jpg",
+    "metacriticLink": ""
   },
   {
     "id": 20,
@@ -237,7 +255,8 @@
     "publisher": "Psyonix, Inc.",
     "metacritic": 86,
     "price": 19.99,
-    "pic": "assets/gamepic/rocketleague.jpg"
+    "pic": "assets/gamepic/rocketleague.jpg",
+    "metacriticLink": ""
   },
   {
     "id": 21,
@@ -249,6 +268,7 @@
     "publisher": "Milestone S.r.l.",
     "metacritic": 72,
     "price": 49.99,
-    "pic": "assets/gamepic/motogp.jpg"
+    "pic": "assets/gamepic/motogp.jpg",
+    "metacriticLink": ""
   }
 ]
