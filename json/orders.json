@@ -214,15 +214,5 @@
     "userEmail": "timy1901@gmail.com",
     "shippingAddress": "",
     "shippingAdress": "Petőfi Sándor street 18."
-  },
-  {
-    "id": 53,
-    "insdate": "2019-08-27T14:51:38.220Z",
-    "product": 2,
-    "quantity": 1,
-    "userName": "Pekk Csaba",
-    "userEmail": "timy1901@gmail.com",
-    "shippingAddress": "",
-    "shippingAdress": "Petőfi Sándor street 18."
   }
 ]
