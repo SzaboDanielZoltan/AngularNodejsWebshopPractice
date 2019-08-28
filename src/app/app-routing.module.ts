@@ -9,6 +9,8 @@ import { AdminNewOrderComponent } from './page/admin-new-order/admin-new-order.c
 import { AdminProductsComponent } from './page/admin-products/admin-products.component';
 import { AdminProductEditComponent } from './page/admin-product-edit/admin-product-edit.component';
 import { ContactComponent } from './page/contact/contact.component';
+import { PrivacyPolicyComponent } from './page/privacy-policy/privacy-policy.component';
+import { TermsComponent } from './page/terms/terms.component';
 
 
 const routes: Routes = [
@@ -21,6 +23,8 @@ const routes: Routes = [
   { path: 'admin/orders/:id', component: AdminOrderEditComponent },
   { path: 'admin/products', component: AdminProductsComponent },
   { path: 'admin/products/:id', component: AdminProductEditComponent },
+  { path: 'privacypolicy', component: PrivacyPolicyComponent },
+  { path: 'terms', component: TermsComponent },
   { path: '**', component: IndexComponent },
 ];
 
